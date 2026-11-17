@@ -205,7 +205,7 @@ h2.rv::after{width:0;transition:width .9s var(--ease) .35s}h2.rv.show::after{wid
   <ul class="links" id="links">
     <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#education">Education</a></li>
     <li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#my-projects">Work Projects</a></li>
-    <li><a href="#college-project">College Project</a></li><li><a href="#project-library">Project Files</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li>
+    <li><a href="#college-project">College Project</a></li><li><a href="#project-library">Project Files</a></li><li><a href="#documents">Documents</a></li><li><a href="#resume">Resume</a></li><li><a href="#contact">Contact</a></li>
   </ul>
 </nav></div></header>
 
@@ -234,7 +234,7 @@ h2.rv::after{width:0;transition:width .9s var(--ease) .35s}h2.rv.show::after{wid
     <div>
       <p>I'm Suhel Khan, an electrical engineering graduate from Uttar Pradesh. I completed my Diploma in Electrical Engineering at Integral University, Lucknow in 2026 with First Division with Honours.</p>
       <p>I am currently working as a Graduate Engineer Trainee (GET) at BA PRERNA from October 2026. In 2025, I completed an industrial internship at a 33/11 kV substation. I also have 6+ years of practical knowledge of domestic and residential electrical wiring.</p>
-      <p>I'm looking for an position where I can apply my electrical engineering knowledge, develop my technical skills and contribute to the growth of the organization while continuously learning.</p>
+      <p>I'm looking for an entry-level position where I can apply my electrical engineering knowledge, develop my technical skills and contribute to the growth of the organization while continuously learning.</p>
       <p><b style="color:#fff">Languages:</b> Hindi, English<br><b style="color:#fff">Nationality:</b> Indian<br><b style="color:#fff">Hometown:</b> Deoria, Uttar Pradesh<br><b style="color:#fff">Interests:</b> Travelling, photo &amp; video editing</p>
     </div>
     <div class="stats">
@@ -430,6 +430,49 @@ h2.rv::after{width:0;transition:width .9s var(--ease) .35s}h2.rv.show::after{wid
 </style>
 
 <!-- 7. RESUME -->
+<!-- EDUCATIONAL DOCUMENTS -->
+<section id="documents">
+  <div class="wrap">
+    <p class="tag rv">ACADEMIC RECORDS</p>
+    <h2 class="rv">Educational Documents</h2>
+    <p class="rv" style="color:var(--muted);max-width:760px;margin-top:-22px;margin-bottom:28px;">
+      View or download selected academic marksheets.
+    </p>
+    <div class="grid">
+      <article class="card rv">
+        <h3>Diploma in Electrical Engineering</h3>
+        <p class="meta">Integral University · Statement of Marks</p>
+        <p>Diploma marksheet / official transcript.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;">
+          <a class="btn line" href="Diploma_Marksheet.pdf" target="_blank" rel="noopener">View</a>
+          <a class="btn fill" href="Diploma_Marksheet.pdf" download>Download</a>
+        </div>
+      </article>
+      <article class="card rv">
+        <h3>Intermediate Marksheet</h3>
+        <p class="meta">Uttar Pradesh Board · 2022</p>
+        <p>Intermediate Examination certificate-cum-marks sheet.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;">
+          <a class="btn line" href="Intermediate_Marksheet.pdf" target="_blank" rel="noopener">View</a>
+          <a class="btn fill" href="Intermediate_Marksheet.pdf" download>Download</a>
+        </div>
+      </article>
+      <article class="card rv">
+        <h3>High School Marksheet</h3>
+        <p class="meta">Uttar Pradesh Board · 2020</p>
+        <p>High School Examination certificate-cum-marks sheet.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;">
+          <a class="btn line" href="High_School_Marksheet.pdf" target="_blank" rel="noopener">View</a>
+          <a class="btn fill" href="High_School_Marksheet.pdf" download>Download</a>
+        </div>
+      </article>
+    </div>
+    <p style="margin-top:22px;color:var(--muted);font-size:.88rem;">
+      These documents are publicly accessible. Do not upload identity cards, bank documents, or other sensitive records here.
+    </p>
+  </div>
+</section>
+
 <section id="resume" class="alt">
   <div class="wrap">
     <p class="tag">My Resume</p>
@@ -452,11 +495,12 @@ h2.rv::after{width:0;transition:width .9s var(--ease) .35s}h2.rv.show::after{wid
       <div class="ci"><span class="i"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><div><b>Phone</b><a href="tel:+918604495922">+91 86044 95922</a></div></div>
       <div class="ci"><span class="i">in</span><div><b>LinkedIn</b><a href= error404 target="_blank" rel="noopener">linkedin.com/in/your-prftofile</a></div></div>
     </div>
-    <!-- Form opens the visitor's email app (free, no server needed) -->
-    <form id="form">
-      <input id="fn" placeholder="Your name" required>
-      <input id="fe" type="email" placeholder="Your email" required>
-      <textarea id="fm" rows="5" placeholder="Your message" required></textarea>
+    <!-- Contact form sends submissions to Formspree -->
+    <form id="form" action="https://formspree.io/f/mvkaaoew" method="POST">
+      <input id="fn" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+      <input id="fe" name="email" type="email" placeholder="Your email" autocomplete="email" required>
+      <textarea id="fm" name="message" rows="5" placeholder="Your message" required></textarea>
+      <input type="hidden" name="_subject" value="New portfolio message from your website">
       <button class="btn fill" type="submit">Send Message</button>
     </form>
   </div>
@@ -466,9 +510,6 @@ h2.rv::after{width:0;transition:width .9s var(--ease) .35s}h2.rv.show::after{wid
 <button id="top" aria-label="Back to top">↑</button>
 
 <script>
-/* ===== EDIT YOUR EMAIL HERE (used by contact form) ===== */
-const MY_EMAIL = "suhelk192004@gmail.com";
-
 const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
 $("#yr").textContent = new Date().getFullYear();
 
@@ -506,13 +547,6 @@ let r = 0;
 setInterval(() => { r = (r + 1) % roles.length; const t = $("#typed");
   t.style.opacity = 0; setTimeout(() => { t.textContent = roles[r]; t.style.opacity = 1; }, 300); }, 3000);
 $("#typed").style.transition = "opacity .3s";
-
-// Contact form -> opens email app
-$("#form").onsubmit = e => {
-  e.preventDefault();
-  const body = `${$("#fm").value}\n\nFrom: ${$("#fn").value} (${$("#fe").value})`;
-  location.href = `mailto:${MY_EMAIL}?subject=${encodeURIComponent("Portfolio enquiry from " + $("#fn").value)}&body=${encodeURIComponent(body)}`;
-};
 
 // Premium micro-interactions
 $("header").classList.add("scrolled"); 
